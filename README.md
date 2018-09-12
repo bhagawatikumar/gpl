@@ -7,7 +7,7 @@ DATABASE-DUMP/gpl.sql
 # GPL Application Skeleton
 
 Git Clone the Project.
-Switch to Branch user-story/List-Tournament-matches
+Switch to Branch `user-story/List-Tournament-matches`
 
 
 You can now either use your machine's webserver to view the default home page, or start
