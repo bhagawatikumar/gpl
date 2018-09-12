@@ -21,11 +21,13 @@ Then visit `http://localhost:8765` to see the welcome page.
 
 ## Update
 
-Since this skeleton is a starting point for your application and various files
-would have been modified as per your needs, there isn't a way to provide
-automated upgrades, so you have to do any updates manually.
+Since this skeleton is a starting point for application and various files
+would have been modified as per needs, there isn't a way to provide
+automated upgrades, so update manually.
 
 ## Configuration
 
-Read and edit `config/app.php` and setup the `'Datasources'` and any other
+Edit `config/app.php` and setup the `'Datasources'` and any other
 configuration relevant for your application.
+
+Please update `config/app.php` Line `251`, `258`, `259`, with your local host credentials for MYSQL
