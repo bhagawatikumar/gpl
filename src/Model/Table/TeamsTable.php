@@ -34,6 +34,7 @@ class TeamsTable extends Table
         $this->setTable('teams');
         $this->setDisplayField('team_id');
         $this->setPrimaryKey('team_id');
+        $this->hasOne('ClubState')->setForeignKey('team_club_state');
     }
 
     /**

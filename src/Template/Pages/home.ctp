@@ -52,6 +52,8 @@ $cakeDescription = 'GPL';
             <li class="bullet"><?= $this->Html->link('Matches','/matches',['class' => 'button']); ?> </li>
             <li class="bullet"><?= $this->Html->link('Players','/players',['class' => 'button']); ?> </li>
             <li class="bullet"><?= $this->Html->link('Countries','/countries',['class' => 'button']); ?> </li>
+            <li class="bullet"><?= $this->Html->link('Club-States','/club-states',['class' => 'button']); ?> </li>
+            <li class="bullet"><?= $this->Html->link('Teams','/teams',['class' => 'button']); ?> </li>
         </ul>
     </div>
 </div>

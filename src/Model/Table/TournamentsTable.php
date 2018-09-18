@@ -38,7 +38,8 @@ class TournamentsTable extends Table
         $this->setPrimaryKey('tournament_id');
 
         $this->belongsTo('Countries', [
-            'foreignKey' => 'tournament_country_id'
+            'foreignKey' => 'tournament_country_id',
+            'displayName' => 'country_name'
         ]);
     }
 
