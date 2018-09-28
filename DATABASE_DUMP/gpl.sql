@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Sep 12, 2018 at 11:14 AM
+-- Generation Time: Sep 28, 2018 at 05:15 PM
 -- Server version: 5.7.23-0ubuntu0.16.04.1
--- PHP Version: 7.0.30-0ubuntu0.16.04.1
+-- PHP Version: 7.0.32-0ubuntu0.16.04.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -35,6 +35,17 @@ CREATE TABLE `club_states` (
   `updated_on` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `club_states`
+--
+
+INSERT INTO `club_states` (`club_state_id`, `club_state_name`, `club_state_code`, `status`, `created_on`, `updated_on`) VALUES
+(1, 'Mumbai', 'MUM', 1, '2018-09-18 08:12:00', '2018-09-18 08:12:00'),
+(2, 'Banglore', 'BANG', 1, '2018-09-18 08:12:00', '2018-09-18 08:12:00'),
+(3, 'Delhi', 'DEL', 1, '2018-09-18 08:12:00', '2018-09-18 08:12:00'),
+(4, 'Pune', 'PUNE', 1, '2018-09-18 08:12:00', '2018-09-18 08:12:00'),
+(5, 'Punjab', 'PUNJ', 1, '2018-09-18 08:13:00', '2018-09-18 08:13:00');
+
 -- --------------------------------------------------------
 
 --
@@ -49,6 +60,17 @@ CREATE TABLE `countries` (
   `created_on` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `updated_on` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `countries`
+--
+
+INSERT INTO `countries` (`country_id`, `country_name`, `country_code`, `status`, `created_on`, `updated_on`) VALUES
+(1, 'India', 'IND', 1, '2018-09-18 08:08:00', '2018-09-18 08:08:00'),
+(2, 'Srilanka', 'SRL', 1, '2018-09-18 08:08:00', '2018-09-18 08:08:00'),
+(3, 'Pakistan', 'PAK', 1, '2018-09-18 08:08:00', '2018-09-18 08:08:00'),
+(4, 'Nepal', 'NEP', 1, '2018-09-18 08:09:00', '2018-09-18 08:09:00'),
+(5, 'Bangladesh', 'BAN', 1, '2018-09-18 08:09:00', '2018-09-18 08:09:00');
 
 -- --------------------------------------------------------
 
@@ -139,6 +161,13 @@ CREATE TABLE `teams` (
   `status` tinyint(1) NOT NULL DEFAULT '1',
   `updated_on` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `teams`
+--
+
+INSERT INTO `teams` (`team_id`, `team_name`, `team_logo`, `team_club_state`, `created_on`, `status`, `updated_on`) VALUES
+(1, 'Team1', '', 1, '2018-09-18 14:25:00', 1, '2018-09-18 14:25:00');
 
 -- --------------------------------------------------------
 
@@ -248,12 +277,12 @@ ALTER TABLE `tournaments`
 -- AUTO_INCREMENT for table `club_states`
 --
 ALTER TABLE `club_states`
-  MODIFY `club_state_id` int(5) NOT NULL AUTO_INCREMENT;
+  MODIFY `club_state_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `countries`
 --
 ALTER TABLE `countries`
-  MODIFY `country_id` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `country_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `matches`
 --
@@ -278,7 +307,7 @@ ALTER TABLE `player_records`
 -- AUTO_INCREMENT for table `teams`
 --
 ALTER TABLE `teams`
-  MODIFY `team_id` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `team_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `tournaments`
 --
